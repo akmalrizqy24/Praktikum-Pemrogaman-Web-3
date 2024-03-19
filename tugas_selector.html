@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Selector</title>
+
+    <style>
+        /* Adjacent Sibling Selector */
+        h3 + p {
+            color: blue;
+        }
+
+        /* Attribute Selector */
+        input[type="password"] {
+            border: 2px solid red;
+        }
+
+        /* Child Selector */
+        ul > li {
+            list-style-type: circle;
+        }
+
+        /* Descendant Selector */
+        div p {
+            font-style: italic;
+        }
+
+        /* Group Selector */
+        strong, em {
+            text-decoration: underline;
+        }
+
+        /* Negation Selector */
+        p:not(.special) {
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <h3>This is a Heading Three</h3>
+    <p>This is a paragraph following h3.</p>
+    <p class="special">This paragraph is special.</p>
+    <input type="text">
+    <input type="password">
+    <ul>
+        <li>List item 1</li>
+        <li>List item 2</li>
+        <li>List item 3</li>
+    </ul>
+    <div>
+        <p>This is a paragraph inside a div.</p>
+    </div>
+    <p>This is another paragraph.</p>
+    <strong>This is strong text.</strong>
+    <em>This is emphasized text.</em>
+</body>
+</html>
